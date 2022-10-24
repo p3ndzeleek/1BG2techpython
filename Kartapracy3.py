@@ -62,11 +62,30 @@
 #     suma = suma + i
 # print(suma)
 
-liczba = 0
-a = int(input("podaj liczbe graczy"))
-for 
+# liczba = 0
+# a = int(input("podaj liczbe graczy"))
+# for 
 
-for i in range(1, a):
+# for i in range(1, a):
 
-    
+
+#zad 5 
+# n =  int(input())
+
+# suma = n * (n+1) //2 
+
+# for i in range(n-1):
+#     k = int(input())
+#     suma = suma - k
+
+# print(suma)
+
+#zad6
+
+# n = int(input())
+# a, b = 0, 1
+
+# for i in range(n):
+#     a, b = b, a + b
+#     print(a, end=" ")
 

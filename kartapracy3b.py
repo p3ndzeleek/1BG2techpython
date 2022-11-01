@@ -30,6 +30,17 @@
 
 #zad6
 
+k = int(input("podaj ilośc liczb: "))
+Liczby = []
+for i in range(k,100,2):
+    if k %2 ==0:
+        print("tak")
+    else:
+        print("nie")
+
+#zad7
+
+
 
 
 
@@ -40,12 +51,29 @@
 #zad8
 
 # w0 = int(input("podaj kwote wejściową: "))
-# l = int(input("podaj okres inwestycji: "))
-# for i in range(w0, l):
-#     if (l*0.5):
-#         print()
+# l = int(input("podaj okres inwestycji(w miesiącach): "))
+# wk = 0
+# suma = wk
+# for i in range(0, l * 0,5):
+#     suma = suma + wk
+#     print(suma)
 
+#zad9
+#skończ
+# n = int(input())
 
+# for i in range(0, n):
+#     if n %3 ==0 and n %7 ==0:
+#         print("tak")
+
+#zad10
+
+ # import math
+# for i in range(1,1000):
+#   if i%10==math.sqrt(i):
+#     print(i)
+#   elif i%100==math.sqrt(i):
+#     print(i)
         
         
         

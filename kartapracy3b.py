@@ -30,17 +30,21 @@
 
 #zad6
 
-k = int(input("podaj ilośc liczb: "))
-Liczby = []
-for i in range(k,100,2):
-    if k %2 ==0:
-        print("tak")
-    else:
-        print("nie")
+# k = int(input("podaj ilośc liczb: "))
+# Liczby = []
+# for i in range(k,100,2):
+#     if k %2 ==0:
+#         print("tak")
+#     else:
+#         print("nie")
 
 #zad7
 
-
+#m = int(input())
+# a=0
+# for i in range(11, m+1, 2):
+#   a+=i
+# print(a)
 
 
 
@@ -59,16 +63,15 @@ for i in range(k,100,2):
 #     print(suma)
 
 #zad9
-#skończ
 # n = int(input())
-
-# for i in range(0, n):
-#     if n %3 ==0 and n %7 ==0:
-#         print("tak")
+# suma = 0
+# for i in range(21, n+1 , 100):
+#   suma += i 
+# print(suma)
 
 #zad10
 
- # import math
+# import math
 # for i in range(1,1000):
 #   if i%10==math.sqrt(i):
 #     print(i)

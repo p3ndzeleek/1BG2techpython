@@ -22,7 +22,20 @@
 # 10 = 1 + 2 + 5 (NIE JEST)
 # 28 = 1 + 2 + 4 + 7 + 14 (JEST)
 
-n = int(input())
+# n = int(input())
+# suma = 0
+# for i in range(1,n):
+#     if n %i ==0:
+#         suma =+ i
+# if suma ==n:
+#     print("tak")
+# else:
+#     print("nie")
 
 # Zad 4 - Medium - Oblicz sumę liczb dwucyfrowych parzystych podzielnych przez 7
 # Sprawa oczywista :)
+
+# for i in range(10, 100, 2):
+#     if i %7 ==0:
+#         print()
+

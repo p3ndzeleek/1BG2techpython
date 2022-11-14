@@ -11,7 +11,7 @@
 # n = int(input())
 # a, b = 1, 0
 # suma = 0
-# for i in range(n):
+# for i in range(n): 
 #     a, b = b, a+b
 #     suma = suma + b
 # print(suma)

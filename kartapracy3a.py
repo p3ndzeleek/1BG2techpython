@@ -33,3 +33,7 @@
 # else:
 #     print("|"*i, end=" ")
 
+#zad4
+
+
+

@@ -1,6 +1,6 @@
 # #zad1 
 # for i in range(1,31):
-#     print(i, "dni")
+#     print(f"{i} listopad 2022")
 
 #zad2
 
@@ -9,45 +9,40 @@
 
 #zad3
 
-# for i in range(1138, 9855):
+# for i in range(1000, 10000):
 #     if i %379 ==0:
 #         print(i)
 
 #zad4
 
 # for i in range(101, 1000):
-#     if i %5 ==0 and i %6 ==0 and i %11 ==0:
+#     if i %5 ==0 or i %6 ==0 or i %11 ==0:
 #         print(i)
 
 #zad5
 
-# a = int(input("podaj ilośc liczb: "))
-# Liczby = []
-# for i in range(0, a):
-#     temp = int(input(f"Podaj {i+1} liczbę: "))
-#     Liczby.append(temp)
-# print(f"Wynik to: {sum(Liczby)}")
-
+# n = int(input())
+# g = 0
+# for i in range(n):
+#     k = int(input())
+#     g += k
+# print(g)
 #zad6
 
-# k = int(input("podaj ilośc liczb: "))
-# Liczby = []
-# for i in range(k,100,2):
-#     if k %2 ==0:
-#         print("tak")
-#     else:
-#         print("nie")
+# k = int(input())
+# a = 0
+# for i in range(0,2 * k,2):
+#     a += i
+# print(a)
+
 
 #zad7
 
-#m = int(input())
+# m = int(input())
 # a=0
 # for i in range(11, m+1, 2):
 #   a+=i
 # print(a)
-
-
-
 
 
 
@@ -69,15 +64,16 @@
 #   suma += i 
 # print(suma)
 
+
 #zad10
 
-# import math
 # for i in range(1,1000):
-#   if i%10==math.sqrt(i):
+#   if i%10==i ** (1/2):
 #     print(i)
-#   elif i%100==math.sqrt(i):
+#   elif i%100== i ** (1/2):
 #     print(i)
-        
+
+
         
         
 #zad69

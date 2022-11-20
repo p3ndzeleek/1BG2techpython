@@ -51,11 +51,11 @@
 
 # a,b,c = int(input("podaj a = ")),int(input("podaj b = ")),int(input("podaj c = "))
 
-# if (a*a+b*b == c*c) or (a*a+c*c == b*b) or (c*c+b*b == a*a):
+# if a*a+b*b == c*c or a*a+c*c == b*b or c*c+b*b == a*a:
 #     print("prostokątny")
 # else:
-#     if (a*a+b*b < c*c) or (a*a+c*c < b*b) or (c*c+b*b < a*a):
+#     if a*a+b*b < c*c or a*a+c*c < b*b or c*c+b*b < a*a:
 #         print("rozwartokątny")
 #     else:
-#         if (a*a+b*b > c*c) or (a*a+c*c > b*b) or (c*c+b*b > a*a):
-#             print("ostrokątny")
+#         if a*a+b*b > c*c and a*a+c*c > b*b and c*c+b*b > a*a:
+#             print("ostrokątny") 

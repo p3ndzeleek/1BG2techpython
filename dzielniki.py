@@ -20,4 +20,4 @@
 
 #zapamiętaj 
 #while True 
-robi pętle dopóki ktos nie przerwie
+#robi pętle dopóki ktos nie przerwie

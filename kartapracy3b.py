@@ -49,13 +49,11 @@
 
 #zad8
 
-# w0 = int(input("podaj kwote wejściową: "))
-# l = int(input("podaj okres inwestycji(w miesiącach): "))
-# wk = 0
-# suma = wk
-# for i in range(0, l * 0,5):
-#     suma = suma + wk
-#     print(suma)
+# w = int(input("podaj kwote wejściową: "))
+# l = int(input("podaj okres inwestycji: "))
+# for i in range(int(l*12)):
+#     w += w * 0.005
+# print(w)
 
 #zad9
 # n = int(input())
@@ -73,9 +71,6 @@
 #   elif i%100== i ** (1/2):
 #     print(i)
 
-
-        
-        
 #zad69
 
 # def dick_draw():

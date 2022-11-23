@@ -50,10 +50,12 @@
 #zad8
 
 # w = int(input("podaj kwote wejściową: "))
-# l = int(input("podaj okres inwestycji: "))
+# l = float(input("podaj okres inwestycji: "))
 # for i in range(int(l*12)):
 #     w += w * 0.005
 # print(w)
+
+
 
 #zad9
 # n = int(input())
@@ -70,6 +72,8 @@
 #     print(i)
 #   elif i%100== i ** (1/2):
 #     print(i)
+
+
 
 #zad69
 

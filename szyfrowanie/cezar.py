@@ -12,7 +12,7 @@
 # for i in range(65, 91):
 #     print(chr(i), end="")
 
-napis = "POLSKA"
+# napis = "POLSKA"
 # print(len(napis)) #zawraca długość napisu
 # print(napis[0]) #napis to lista
 # print(napis[1])

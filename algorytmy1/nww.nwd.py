@@ -14,3 +14,4 @@
 # while b > 0:
 #     a ,b = b , a %b
 # print(iloczyn / a)
+

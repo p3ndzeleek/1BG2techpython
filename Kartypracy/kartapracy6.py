@@ -103,12 +103,21 @@
 #     suma += i 
 # print(suma)
 
-n = int(input())
-suma = 0
-licznik = 0
-for i in range(999,99,-1):
-    if i %37==0:
-        suma +=i
-        licznik += 1
-        
+# n = int(input())
+# suma = 0
+# licznik = 0
+# for i in range(999,99,-1):
+#     if i %37==0:
+#         suma +=i
+#         licznik += 1
+
+#zad8
+# suma = 0
+# n = int(input())
+# for i in range(1,n):
+   
+
+#zad9
+
+#zad10
 

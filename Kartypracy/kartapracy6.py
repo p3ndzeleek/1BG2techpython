@@ -112,12 +112,19 @@
 #         licznik += 1
 
 #zad8
-# suma = 0
 # n = int(input())
-# for i in range(1,n):
-   
+# x = 5
+# suma = 2
+# for i in range(1,n+1):
+#     suma += x
+#     x = (abs(x) + 3)*(-1) ** i
+#     print(suma)
 
 #zad9
+n = int(input())
+x = 1
+y = -2
+for i in range(n):
 
 #zad10
 

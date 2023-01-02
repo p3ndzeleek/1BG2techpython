@@ -1,4 +1,4 @@
-# a,b,c =int(input()), int(input()), int(input()),
+ # a,b,c =int(input()), int(input()), int(input()),
 # #ciąg arytmetyczny 
 # if a - b == b - c:
 #     print("ciąg jest arytmetyczny")

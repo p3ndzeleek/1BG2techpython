@@ -44,35 +44,59 @@
 # print(suma)
 
 
-# niebanalny 1
-
-# n = int(input())
-# a = 1
-# suma = 0
-# for i in range(1,n+1):
+# niebanalny 1                        
 #     b = i*i
 #     suma += a/b
 #     a += 2
-# print(suma)
-
-
-
-#niebalalny 2
+ #niebalalny 2
 #n = int(input())
 # a = 1
 # suma = 0
 # sumb = 0
-# for i in range(1, n + 1):
+#for i in range(1,n+1):
 #     suma += a
 #     a += 2
 #     b = i * i
 #     sumb += b
-# print(suma/sumb)
+ #ciąg wymagający 
+# a = 2
+# suma = 0
+# for i in range(1, n + 1):
+#     b = i ** 3 + 2
+#     suma += a/b
+#     a += 2
 
 
+# Zad 15
+# n = int(input())
+# a = 3
+# b = 1
+# il = 1
+# for i in range(n):
+#     il *= a/b
+#     a += 1
+#     b = b * 2 + 1
+# print(il)
+# Zad 16
+# n = int(input())
+# a1 = 1
+# a2 = 2
+# b = 1
+# il = 1
+# for i in range(1, n + 1):
+#     il *= a1/b
+#     a1, a2 = a2, a1 + a2
+#     b *= 2
+# print(il)
 
-
-
+n = int(input())
+a = 1
+suma = 0
+for i in range(1,n+1):
+    b = i*i
+    suma += a/b
+    a += 2  
+print(suma)
 
 #ciąg wymagający 
 #n = int(input())

@@ -7,7 +7,7 @@ ilośc = 1
 H = ""
 for i in range(len(W)-1):
     if W[i] == W[i+1]:
-        ilośc += 1
+        ilośc += 1  
     else:
         if ilośc > 1:
             H += str(ilośc) 

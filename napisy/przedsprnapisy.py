@@ -61,14 +61,15 @@
 #         literka = x
 # print(literka, maksiu)
 
-#8 
-h = input()
-ilosc = 0
-for i in range(len(h)):
-    if h[i:i+2] == "LA":
-        ilosc += 1
-if ilosc == 3:
-    print("taK")
-else:
-    print("NIe")
+#8 boyer moore sprawdza czy La występuje tyle razy ile wpiszemy w "if ilosc == :"
+# h = input()
+# ilosc = 0
+# for i in range(len(h)):
+#     if h[i:i+2] == "LA":
+#         ilosc += 1
+# if ilosc == 2:
+#     print("taK")
+# else:
+#     print("NIe")
+
 

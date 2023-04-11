@@ -89,14 +89,14 @@
 #     b *= 2
 # print(il)
 
-n = int(input())
-a = 1
-suma = 0
-for i in range(1,n+1):
-    b = i*i
-    suma += a/b
-    a += 2  
-print(suma)
+# n = int(input())
+# a = 1
+# suma = 0
+# for i in range(1,n+1):
+#     b = i*i
+#     suma += a/b
+#     a += 2  
+# print(suma)
 
 #ciąg wymagający 
 #n = int(input())
@@ -109,3 +109,66 @@ print(suma)
 # print(suma)
 
 
+
+
+
+# print(", ".join(["a", "b", "c"]))
+# print("hello world".replace("hello", "siema kurwo")) #replace zmienia pierwsze słowo krore podamy w nawiasie na drogie napisane po przeciku
+
+#palindrom wyraz jest taki sam od prawej i lewej
+# s = input()
+# l = list(s)
+# r = l.copy()
+# r.reverse()
+# print(l,r)
+# if l == r:
+#     print("tak")
+# else:
+#     print("nie")
+
+#2 sposób
+# s = input()
+# for i in range(len(s)//2):
+#     if s[i] != s[len(s)-1-i]:
+#         exit("nie")
+# exit("tak")
+
+#anagram wyraz z krorego liter można zrobic inny
+# a = input()
+# b = input()
+# X, Y = list(a), list(b)
+# X.sort()
+# Y.sort()
+# a ="".join(X)
+# b ="".join(Y)
+# print(a,b)
+# if a == b:
+#     print("tak")
+# else:
+#     print("nie")
+
+
+#wydawanie reszty
+# T = [500, 200, 100, 50, 20, 10, 5, 2, 1]
+# x = int(input())
+# W = []
+# for i in T:
+#     ilosc = x//i
+#     if ilosc >0:
+#         x = x - ilosc * i 
+#         for j in range(ilosc):
+#             W.append(i)
+# print(W)
+
+
+
+#8 boyer moore sprawdza czy La występuje tyle razy ile wpiszemy w "if ilosc == :"
+# h = input()
+# ilosc = 0
+# for i in range(len(h)):
+#     if h[i:i+2] == "LA":
+#         ilosc += 1
+# if ilosc == 2:
+#     print("taK")
+# else:
+#     print("NIe")

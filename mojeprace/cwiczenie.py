@@ -147,6 +147,19 @@
 # else:
 #     print("nie")
 
+#8 boyer moore sprawdza czy La występuje tyle razy ile wpiszemy w "if ilosc == :"
+# h = input()
+# ilosc = 0
+# for i in range(len(h)):
+#     if h[i:i+2] == "LA":
+#         ilosc += 1
+# if ilosc == 2:
+#     print("taK")
+# else:
+#     print("NIe")
+
+
+
 
 #wydawanie reszty
 # T = [500, 200, 100, 50, 20, 10, 5, 2, 1]
@@ -160,15 +173,3 @@
 #             W.append(i)
 # print(W)
 
-
-
-#8 boyer moore sprawdza czy La występuje tyle razy ile wpiszemy w "if ilosc == :"
-# h = input()
-# ilosc = 0
-# for i in range(len(h)):
-#     if h[i:i+2] == "LA":
-#         ilosc += 1
-# if ilosc == 2:
-#     print("taK")
-# else:
-#     print("NIe")

@@ -15,3 +15,8 @@
 # print(obliczanienetto())
 # print(obliczanienetto())
 # print(obliczanienetto())
+
+def podzielnaprzez3 ():
+    a = int(input())
+    return a%3==0
+print(podzielnaprzez3())

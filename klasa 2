@@ -1,0 +1,17 @@
+# a, b = int(input()), int(input())
+# print((a-b)**3)
+
+# a, b, c = int(input()), int(input()), int(input())
+# print(a*b*c)
+
+# a, b = int(input()), int(input())
+# Print(2* (a+b)/5)
+
+
+# def obliczanienetto():
+#     brutto = int(input())
+#     return brutto/1.23
+
+# print(obliczanienetto())
+# print(obliczanienetto())
+# print(obliczanienetto())

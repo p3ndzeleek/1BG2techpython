@@ -1,4 +1,4 @@
-# a = int(input())
+  # a = int(input())
 # b = int(input())
 # c = int(input())
 # if b-a == c-b:
@@ -109,10 +109,19 @@
 # print(suma)
 
 
+# napis = "Brzeczeszczykiewicz"
+
+
+# print(list(napis
+
+# py_str = "Learn how to use split() in Python"
+# print(py_str.split())
+
 
 
 
 # print(", ".join(["a", "b", "c"]))
+
 # print("hello world".replace("hello", "siema kurwo")) #replace zmienia pierwsze słowo krore podamy w nawiasie na drogie napisane po przeciku
 
 #palindrom wyraz jest taki sam od prawej i lewej
@@ -172,4 +181,73 @@
 #         for j in range(ilosc):
 #             W.append(i)
 # print(W)
+
+
+
+#Grupa 2
+
+#zadanie 1
+
+# slowo1 = input("Wprowadź pierwsze słowo: ")
+# slowo2 = input("Wprowadź drugie słowo: ")
+
+# if slowo1 in slowo2:
+#     print(f"Słowo '{slowo1}' jest zawarte w słowie '{slowo2}'")
+# elif slowo2 in slowo1:
+#   print(f"Słowo '{slowo2}' jest zawarte w słowie '{slowo1}'")
+# else:
+#     print(f"Słowo '{slowo1}' nie jest zawarte w słowie '{slowo2}'")
+
+# #zadanie 2
+
+# litery = input("Wprowadź litery: ")
+# zbior_liter = set(litery)
+
+# if "b" in zbior_liter and "a" in zbior_liter and "z" in zbior_liter:
+#     print("Można utworzyć słowo 'baza' ze wprowadzonych liter.")
+# else:
+#     print("Nie można utworzyć słowa 'baza' ze wprowadzonych liter.")
+
+# #zadanie 3
+
+# slowo = input("Wprowadź słowo: ")
+# nowe_slowo = ""
+
+# for litera in slowo:
+#     if slowo.count(litera) == 1:
+#         nowe_slowo += litera
+
+# print(f"Słowo bez powtarzających się liter: {nowe_slowo}")
+
+# #Grupa 1
+
+# #zadanie 1
+# import re
+
+# slowo = input("Wprowadź słowo: ")
+# match = re.search(r"(.)(.*)(\1)", slowo)
+# znaki = match.group(2) if match else ""
+
+# print(f"Znaki między parą takich samych znaków: {znaki}")
+
+# #zadanie 2
+
+# slowo = input("Wprowadź słowo: ")
+# nowe_slowo = ""
+
+# for i in range(len(slowo)-2, -1, -2):
+#     para = slowo[i:i+2][::-1]
+#     nowe_slowo += para
+
+# print(nowe_slowo)
+
+# #zadanie 3
+# a = input()
+# X = list(a)
+# Y = list(a)
+# Y.sort(key=lambda y: y.lower())
+# if X == Y:
+#     print("TAK")
+# else:
+#     print("NIE")
 

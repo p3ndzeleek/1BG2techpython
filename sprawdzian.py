@@ -1,47 +1,56 @@
-# 1
-# a
-# a, b, c, d = int(input()), int(input()), int(input()), int(input())
-# if (a + b + c + d)/4:
+#zad1
+# def FizzBuzz(n):
+# 	if n % 3 == 0 and n % 5 == 0:
+# 		return "Fizz Buzz"
+# 	elif n % 3 == 0:
+# 		return "Fizz"
+# 	elif n % 5 == 0:
+# 		return "Buzz"
+# 	else:
+# 		return str(7)
+
+# print(FizzBuzz(5))
+# print(FizzBuzz(3))
+# print(FizzBuzz(15))
+# print(FizzBuzz(7))
+# #zad2
+# for i in range(1, 11):
+#     for j in range(1, 11):
+#         print(i * j, end='\t')
 #     print()
-
-#b
-# a, b, c, d = int(input()), int(input()), int(input()), int(input())
-# if a-d == 2 or d-a ==1:
-#     print("Tak")
-# else:
-#     print("nie")
-
-#c 
-# a, b, c, d = int(input()), int(input()), int(input()), int(input())
-# if a>b:
-#     print()
-#     if b>c:
-#         print()
-#         if c>d:
-#             print()
-
-#zad 2
-#a
-
-# a = 0
-# for i in range(10, 100):
-#     if (a-1)%2 ==0:
-#         print(a/2)
-
-
-
 #zad3
+# def lata_20 (start_rok):
+#     years = []
+#     for i in range(start_rok, start_rok + 20):
+#         years.append(i)
+#     return years
 
-# a = int(input())
-# if a %5 ==0 and  a %6 ==0 and a%7 !=0:
-#     print("tak")
-# else:
-#     print("nie")
+# print(lata_20(2024))
+# def lata_przestepne():
+#     przestepne_rok = []
+#     for rok in range(2024, 1581, -1):
+#         if rok % 4 == 0:
+#             if rok % 100 == 0:
+#                 if rok % 400 == 0:
+#                     przestepne_rok.append(rok)
+#             else:
+#                 przestepne_rok.append(rok)
+#     return przestepne_rok
 
-#zad4
+# print(lata_przestepne())
 
-for i in range(101, 1000):
-    if i %39 ==0:
-        print()
-        
-    
+def lata_przestepne():
+    przestepne_rok = []
+    for rok in range(2024, 1581, -1):
+        if rok % 4 == 0:
+            if rok % 100 == 0:
+                if rok % 400 == 0:
+                    przestepne_rok.append(rok)
+            else:
+                przestepne_rok.append(rok)
+    return przestepne_rok
+
+przestepne = lata_przestepne()
+for rok in przestepne:
+    print(rok)
+

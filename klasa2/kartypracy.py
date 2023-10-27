@@ -197,7 +197,31 @@
 #         f(n-1)+2
 # print(f(n))
 
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+# print(factorial())
 
+#zad2
+
+        
+
+
+
+
+
+
+def suma_liczb(n):
+    suma = 0
+    while n > 0 % 10 == 0:
+        suma += n % 10
+        n = n // 10
+    return suma
+
+n = int(input())  
+print(suma_liczb(n))
 
 
 

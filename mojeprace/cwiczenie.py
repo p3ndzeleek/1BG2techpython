@@ -251,3 +251,60 @@
 # else:
 #     print("NIE")
 
+
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+
+# if a+b > c and a+c > b and b+c > a:
+#     print("Liczby spełniają nierówność trójkąta")
+# else:
+#     print("Liczby nie spełniają nierówności trójkąta")
+
+
+# a = float(input())
+# b = float(input())
+# c = float(input())
+
+# if a + b > c and a + c > b and b + c > a:
+#     if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
+#         print("Trójkąt jest prostokątny.")
+#     elif a**2 + b**2 < c**2 or a**2 + c**2 < b**2 or b**2 + c**2 < a**2:
+#         print("Trójkąt jest rozwartokątny.")
+#     else:
+#         print("Trójkąt jest ostrokątny.")
+# else:
+#     print("Z podanych boków nie można zbudować trójkąta.")
+
+def check_triangle(a, b, c):
+    if a + b > c and a + c > b and b + c > a:
+        if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
+            return "Trójkąt jest prostokątny."
+        elif a**2 + b**2 < c**2 or a**2 + c**2 < b**2 or b**2 + c**2 < a**2:
+            return "Trójkąt jest rozwartokątny."
+        else:
+            return "Trójkąt jest ostrokątny."
+    else:
+        return "Z podanych boków nie można zbudować trójkąta."
+
+# Example usage:
+a = float(input("Podaj długość boku a: "))
+b = float(input("Podaj długość boku b: "))
+c = float(input("Podaj długość boku c: "))
+print(check_triangle(a, b, c))
+
+
+a = float(input("Podaj długość boku a: "))
+b = float(input("Podaj długość boku b: "))
+c = float(input("Podaj długość boku c: "))
+
+if a + b > c and a + c > b and b + c > a:
+    if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
+        print("Trójkąt jest prostokątny.")
+    elif a**2 + b**2 < c**2 or a**2 + c**2 < b**2 or b**2 + c**2 < a**2:
+        print("Trójkąt jest rozwartokątny.")
+    else:
+        print("Trójkąt jest ostrokątny.")
+else:
+    print("Z podanych boków nie można zbudować trójkąta.")

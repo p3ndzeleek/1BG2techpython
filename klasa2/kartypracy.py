@@ -1,4 +1,4 @@
-# a, b = int(input()), int(input())
+
 # print((a-b)**3)
 
 # a, b, c = int(input()), int(input()), int(input())
@@ -38,7 +38,7 @@
 #     print("tak")
 # limit = int(input("podaj wage"))
 # def sprawdzeniewagi():
-    
+
 #     return limit > 20
 # print(sprawdzeniewagi("nie"))
 # sprawdzeniewagi()
@@ -97,7 +97,7 @@
 #   print('TAK')
 # else:
 #   print('NIE')
-    
+
 
 # a,b,c = int(input("podaj a = ")),int(input("podaj b = ")),int(input("podaj c = "))
 
@@ -197,45 +197,9 @@
 #         f(n-1)+2
 # print(f(n))
 
-# def factorial(n):
-#     if n == 0:
-#         return 1
-#     else:
-#         return n * factorial(n-1)
-# print(factorial())
-
-#zad2
-
-        
 
 
 
-
-
-
-# def suma_liczb(n):
-#     suma = 0
-#     while n > 0 % 10 == 0:
-#         suma += n % 10
-#         n = n // 10
-#     return suma
-
-# n = int(input())  
-# print(suma_liczb(n))
-
-
-# def silnia_rek(a):
-#     if a == 1:
-#         return a 
-#     else:
-#         return a *(silnia_rek(a-1))
-
-# def silnia_ite(a):
-#     wynik = 1
-#     while a>=1:
-#         wynik *= a
-#         a -=1
-#     return wynik
 
 
 
@@ -292,4 +256,259 @@
 #         i_want_more_dicks = input('do you wish to draw a dick again? enter "Y" for yes, anything else for no: ')
 # dick_draw()
 
+
+
+ #1 wstęp
+# oblicz sume liczb 3 cyfrowych 
+# suma = 0
+# for i in range (100, 1000):
+#   suma += i
+# print ("suma wynosi ",  suma ) 
+
+# # Oblicz sumę i ilość dwucyfrowych wielokrotności liczby 6
+# suma = 0 
+# ilość = 0 
+# for i in range (6, 1000):
+#   if i % 6 == 0:
+#     suma += i 
+#     ilość += i 
+# print ("suma, " , suma )
+# print ("ilosc ,", ilość  )
+
+# # Znajdź największą liczbę wśród 5 wylosowanych przez program liczb 4-cyfrowych
+# from random import randint
+# L = (randint(1000,9999) for i in range (5))
+# #print (L)
+# największa = max(L)
+# print (największa )
+
+# #Podaj sumę cyfr w dowolnej liczbie
+# suma = 0 
+# a = int(input())
+# for i in str(a):
+#     suma += int(i)
+# print("Suma cyfr w liczbie", a, "to:", suma)
+
+# #Znajdź najmniejszą cyfrę we wpisanej przez usera liczbie 3-cyfrowej
+# a = input("podaj liczbe 3 cyfrową " )
+# if len(a) == 3 :
+#   najmniejsza = min(a)
+#   print("Najmniejsza cyfra w liczbie", a, "to:", najmniejsza)
+# else :
+#   print ("jesteś debilem miała byc 3 cyfrowa ")
+
+# # Sprawdź czy wpisana przez usera liczba jest pierwsza
+# n = int(input())
+# for i in range (2, n ):
+#   if n % i == 0 :
+#     print("lizcba nie jest pierwsza ")
+#     exit(0)
+# print("liczba jest pierwsza")
+
+# #Sprawdź czy wpisana przez usera liczba jest złożona
+# n = int(input())
+# for i in range (2, n ):
+#   if n % i != 0 :
+#     print("lizcba nie jest złożona ")
+#   else :
+#     print("liczba jest złożona")
+#   exit(0)
+
+# #Sprawdź czy wpisana przez usera liczba jest względnie pierwsza z 24 
+# from math import gcd 
+# a = int(input())
+# liczba = 24 
+# if gcd (a, liczba) == 1 :
+#   print ("jest względnie pierwsza")
+# else:
+#   print("nie jest względnie pierwsza")
+
+# #Zakoduj szyfrem CEZARA i kluczem k słowo s.
+# napis = input("Podaj napis do szyfracji: ")
+# szyfr = ""
+# klucz = int(input("Podaj klucz: "))
+
+# for i in range(len(napis)):
+#     szyfr = szyfr + chr(65 + (ord(napis[i]) - 65 + klucz) % 26)
+# print("Szyfracja:", szyfr)
+
+# #Dodaj dwa ułamki a/b + c/d. Zapisz sumę jako ułamek nieskracalny i liczbę m
+# from math import gcd 
+# a = int(input("gora pierwszego ulamka "))
+# b = int(input("dol pierwszego ulamka "))
+# c = int(input("gora drugiego ulamka "))
+# d = int(input("dul drugiego ulamka "))
+# #dodoajemy  licznik 
+# licznik = a *d + c*b 
+# mianownik = b*d 
+# #skracanie 
+# nwd = gcd(licznik, mianownik)
+# licznik = licznik // nwd
+# mianownik = mianownik // nwd
+# print(licznik, "/", mianownik)
+
+# #Znajdź NWW dwóch wpisanych przez usera liczb
+# from math import gcd
+# liczba1 = int(input("Wpisz pierwszą liczbę: "))
+# liczba2 = int(input("Wpisz drugą liczbę: "))
+# nwd = gcd(liczba1, liczba2)
+# nww = (liczba1 * liczba2) // nwd
+# print("Najmniejsza wspólna wielokrotność (NWW):", nww)
+
+# # - NAPISY
+# # Znajdź ilość liter C we wpisanym napisie
+# n = input()
+# c = n.count("C")
+# print(c)
+
+# #Sprawdź czy literki w napisie są w porządku nierosnącym: np ZOO, WOK, WODA itp
+# napis = input("Podaj napis: ")
+# nierosnacy = True
+# for i in range(1, len(napis)):
+#     if ord(napis[i]) > ord(napis[i - 1]):
+#         nierosnacy = False
+#         break
+# if nierosnacy:
+#     print("Litery w napisie są w porządku nierosnącym.")
+# else:
+#     print("Litery w napisie nie są w porządku nierosnącym.")
+
+
+# #Podaj najdłuższy z 3 wpisanych przez usera wyrazów.
+# a = input("Wprowadź pierwszy wyraz: ")
+# b = input("Wprowadź drugi wyraz: ")
+# c = input("Wprowadź trzeci wyraz: ")
+
+# dlugosc1 = len(a)
+# dlugosc2 = len(b)
+# dlugosc3 = len(c)
+
+# if dlugosc1 > dlugosc2 and dlugosc1 > dlugosc3:
+#     print("Najdłuższy wyraz to 1:", a)
+#     print("Długość:", dlugosc1)
+# elif dlugosc2 > dlugosc1 and dlugosc2 > dlugosc3:
+#     print("Najdłuższy wyraz to 2:", b)
+#     print("Długość:", dlugosc2)
+# elif dlugosc3 > dlugosc1 and dlugosc3 > dlugosc2:
+#     print("Najdłuższy wyraz to 3:", c)
+#     print("Długość:", dlugosc3)
+# else:
+#     print("Wyrazy mają taką samą długość.")
+
+# print("NWD odejmowanie")
+# a = int(input("Podaj 1 liczbę: "))
+# b = int(input("Podaj 2 liczbę: "))
+# while a != b :
+#     if a > b :
+#         a -= b
+#     else :
+#         b -= a
+# print("NWD", a)
+
+# # NWD
+# a = int(input())
+# b = int(input())
+# while b>0:
+#   a, b = b, a%b
+#   print (a)
+80 changes: 79 additions & 1 deletion 80
+mojeprace/cwiczenie.py
+@@ -1,4 +1,4 @@
+# a = int(input())
+  # a = int(input())
+# b = int(input())
+# c = int(input())
+# if b-a == c-b:
+@@ -109,10 +109,19 @@
+# print(suma)
+
+
+# napis = "Brzeczeszczykiewicz"
+
+
+# print(list(napis
+
+# py_str = "Learn how to use split() in Python"
+# print(py_str.split())
+
+
+
+
+# print(", ".join(["a", "b", "c"]))
+
+# print("hello world".replace("hello", "siema kurwo")) #replace zmienia pierwsze słowo krore podamy w nawiasie na drogie napisane po przeciku
+
+#palindrom wyraz jest taki sam od prawej i lewej
+@@ -173,3 +182,72 @@
+#             W.append(i)
+# print(W)
+
+
+
+#Grupa 2
+
+#zadanie 1
+
+# slowo1 = input("Wprowadź pierwsze słowo: ")
+# slowo2 = input("Wprowadź drugie słowo: ")
+
+# if slowo1 in slowo2:
+#     print(f"Słowo '{slowo1}' jest zawarte w słowie '{slowo2}'")
+# elif slowo2 in slowo1:
+#   print(f"Słowo '{slowo2}' jest zawarte w słowie '{slowo1}'")
+# else:
+#     print(f"Słowo '{slowo1}' nie jest zawarte w słowie '{slowo2}'")
+
+# #zadanie 2
+
+# litery = input("Wprowadź litery: ")
+# zbior_liter = set(litery)
+
+# if "b" in zbior_liter and "a" in zbior_liter and "z" in zbior_liter:
+#     print("Można utworzyć słowo 'baza' ze wprowadzonych liter.")
+# else:
+#     print("Nie można utworzyć słowa 'baza' ze wprowadzonych liter.")
+
+# #zadanie 3
+
+# slowo = input("Wprowadź słowo: ")
+# nowe_slowo = ""
+
+# for litera in slowo:
+#     if slowo.count(litera) == 1:
+#         nowe_slowo += litera
+
+# print(f"Słowo bez powtarzających się liter: {nowe_slowo}")
+
+# #Grupa 1
+
+# #zadanie 1
+# import re
+
+# slowo = input("Wprowadź słowo: ")
+# match = re.search(r"(.)(.*)(\1)", slowo)
+# znaki = match.group(2) if match else ""
+
+# print(f"Znaki między parą takich samych znaków: {znaki}")
+
+# #zadanie 2
+
+# slowo = input("Wprowadź słowo: ")
+# nowe_slowo = ""
+
+# for i in range(len(slowo)-2, -1, -2):
+#     para = slowo[i:i+2][::-1]
+#     nowe_slowo += para
+
+# print(nowe_slowo)
+
+# #zadanie 3
+# a = input()
+# X = list(a)
+# Y = list(a)
+# Y.sort(key=lambda y: y.lower())
+# if X == Y:
+#     print("TAK")
+# else:
+#     print("NIE")
 

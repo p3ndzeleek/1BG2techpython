@@ -208,20 +208,20 @@
 
 #karta5
 #zad1
-def suma(liczba):
+# def suma(liczba):
 
-    suma = 0
-    for i in range(2,liczba):
-        pierwsza = True
-        for j in range(2,i // 2 + 1):
-            if i % j == 0:
-                pierwsza = False
-                break
-        if pierwsza:
-            suma += i
-    return suma
-print(suma(10))
-
+#     suma = 0
+#     for i in range(2,liczba):
+#         pierwsza = True
+#         for j in range(2,i // 2 + 1):
+#             if i % j == 0:
+#                 pierwsza = False
+#                 break
+#         if pierwsza:
+#             suma += i
+#     return suma
+# print(suma(10))
+ 
 # Zad 2
 # def suma_cyfr(liczba, pierwiastek):
 #     iloczyn = liczba ** pierwiastek
@@ -291,7 +291,335 @@ print(suma(10))
 
 
 
+# #karta6
+# #zad1
+# a,b,c =int(input()), int(input()), int(input()),
+# #ciąg arytmetyczny 
+# if a - b == b - c:
+#     print("ciąg jest arytmetyczny")
+# else:
+#     print("ciąg nie jest arytmetyczny")
+# #ciaggeomertyczny
+# if a / b == b / c:
+#     print("jestgeometryczny")
+# else:
+#     print("niejestgeometryczny")
+# #rosnący 
+# if a < b < c:
+#     print("jest rosnący")
+# else:
+#     print(" nie jest rosnący")
+# #malejący
+# if a > b > c:
+#     print("jestmalejący")
+# else:
+#     print("niejestmalejący")
 
+
+
+
+
+# def suma(a, b):
+#     sum = a + b
+#     if sum % 2 == 0:
+#         return "parzysta"
+#     else:
+#         return "nieparzysta"
+# print(suma(2,4))
+
+
+
+#zad 1 lampki podłączone są szeregowo. Jeśli, któraś nie działa to nie działa cały lampkowy łańcuch. Sprawdź w tabeli 20 elementowej wypełnionej 0 lub 1 (opcjonalnie False True), reprezentującej łańcuch lampkowy.
+#Policz ile jest lampek działających a ile nie - 0/False - nie działają
+#Zamień wszystkie 0 na 1.
+# import random
+
+
+# def lampki(n):
+#   tab = []
+#   for i in range(n):
+#     tab.append(random.randint(0, 1))
+#   print(tab)
+#   running = 0
+#   notrunning = 0
+#   for i in tab:
+#     if i == 1:
+#       running += 1
+#     else:
+#       notrunning += 1
+
+#   for i in range(len(tab)):
+#     if tab[i] != 1:
+#       tab[i] = 1
+#   print(f"{running} działających i {notrunning} niedziałającyhch")
+#   print(tab)
+
+
+lampki(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#zad 2 W tym roku św. Mikołaj związał worek łańcuchem na kod. Aby otworzyć kod trzeba dwa razy podać ten sam kod. Poproś o wpisanie kodu, i ponowne wspisanie i wyświetl "Kod jest poprawny - worek otwarty" jeśli kody się zgadzają lub "próbuj jeszcze raz". Można trzy razy spróbować otworzyć worek - za trzecim razem pojawia się komunikat "Do siego roku"
+
+
+# def worekmikolaja():
+#   licznik = 0
+#   limit = 3
+#   while licznik < limit:
+#     licznik += 1
+#     kod1 = input("podaj kod ").lower()
+#     kod2 = input("podaj kod ponownie ").lower()
+#     if kod1 == kod2:
+#       print("Kod jest poprawny - worek otwarty")
+#       break
+#     elif licznik != limit:
+#       print("próbuj jeszcze raz")
+#     else:
+#       print("Do przyszłego roku")
+
+
+#zad 3 Narysuj choinkę
+
+# from colorama import Fore
+
+
+# def draw_christmas(n):
+#   for i in range(1, n):
+
+#     print(" " * (2 * n - i), end="")
+#     for _ in range(2 * i - 1):
+#       if 2 * i - 1 == 1:
+#         print(Fore.RED + "*", end="")
+#       else:
+#         print(Fore.GREEN + "*", end="")
+#     print()
+#   print(Fore.YELLOW + " " * (2 * n - 1), end="|")
+
+
+# draw_christmas(11)
+
+#zad 4 Czy zasługujesz na prezenty  św. Mikołaja? Program pyta się "czy w Twoich oczach zasługujesz na prezent?" Jeśli odpowiedź jest nie (bez względu na wielkość liter) - to program "Do zobaczenia za rok"kończy zadanie,jeśli tak (bez względu na wielkość liter) to program pyta się jakiego rodzaju chcesz dostać prezent - wybierz ten, który chcesz dostać najbardziej: 1. kosmetyki, 2. ubrania, 3. gry 4. książki, 5. elektronikę, 6. inne. Program wypisuje:
+
+# (*) Wynik zapisuje to pliku domikolaja.txt
+
+
+# def czy_prezenty():
+#   dict = {
+#       1: 'kosmetyki',
+#       2: "gry",
+#       3: "gry",
+#       4: "książki",
+#       5: "elektronikę",
+#       6: "inne"
+#   }
+#   present = input("czy w Twoich oczach zasługujesz na prezent? ").lower()
+#   if present == "tak":
+#     co_dostac = int(
+#         input('''Co chcesz dostać?
+# 1. kosmetyki, 
+# 2. ubrania, 
+# 3. gry 
+# 4. książki, 
+# 5. elektronikę, 
+# 6. inne.'''))
+#     print(f"Na prezent dostaniesz {dict.get(co_dostac, 0)}")
+#   else:
+#     print("Do zobaczenia za rok")
+
+
+# czy_prezenty()
+
+#zad 5
+# ile zostało dni do Wigilii - 24.12. *do końca nauki w tym roku
+
+# from datetime import datetime
+
+
+# def dni_do_Wigilii():
+#   dzisiaj = datetime.now()
+#   #tutaj ustawiam datę
+#   wigilia = datetime(dzisiaj.year, 12, 24)
+#   if dzisiaj > wigilia:
+#     wigilia = datetime(dzisiaj.year, 12, 24)
+#   pozostalo = wigilia - dzisiaj
+#   return pozostalo.days  #bez tego days z godzinami daje
+
+
+# print(f"Do wigilii zostało {dni_do_Wigilii()} dni")
+
+
+# def dni_do(month, day):
+#   dzisiaj = datetime.now()
+#   #tutaj ustawiam datę
+#   wigilia = datetime(dzisiaj.year, month, day)
+#   if dzisiaj > wigilia:
+#     wigilia = datetime(dzisiaj.year, month, day)
+#   pozostalo = wigilia - dzisiaj
+#   return pozostalo.days  #bez tego days z godzinami daje
+
+
+# print(f"Do wigilii zostało {dni_do_Wigilii()} dni")
+
+#zad 6
+#Losuj prezent - napisz program, który wylosuje dwa rodzaje prezentów z dostępnej puli. Przykładowa pula: kosmetyki,  ubrania,  gry  książki, elektronikę,  inne. Możesz trzy razy losować, jeśli nie jesteś zadowolony z wyboru
+# import random
+
+
+# def losujprezent():
+#   licznik = 0
+#   limit = 3
+#   running = True
+#   while licznik < limit and running:
+#     pula = ["kosmetyki", "ubrania", "gry", "książki", "elektronikę", "inne."]
+#     p1 = random.choices(pula)
+#     p2 = random.choices(pula)
+#     print(f"{p1} {p2}")
+#     licznik += 1
+#     kontynuacja = input("Czy wybór Ci się podoba - tak/ nie? ").lower()
+#     if kontynuacja == "tak":
+#       running = False
+#   else:
+#     print("kto wybrzydza ten nic nie dostaje")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#zad 7
+#kalkulator zakupów - najpierw podaj ile chcesz kupić produktów, a potem pytaj się o kolejną cenę produktu, na końcu podaj kwotę zakupów, kwoty można podawać po przecinku
+#wersja 2 bez limitu liczby produktów - pytaj się za każdym razem czy coś jeszcze, na końcu podaj wynik
+
+
+def zakupy():
+  max = int(input("ilosc "))
+  licznik = 0
+  kwota = 0
+  while licznik < max:
+    kwota += float(input("kwota "))
+    licznik += 1
+  else:
+    print(f"\cena zakupów {kwota}")
+print(zakupy())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def kalkulator_zakupow2():
+#   kwota = 0
+#   running = True
+#   while running:
+#     kwota += float(input("Podaj kwotę produktu "))
+#     continuation = input("Coś jeszcze do zakupów tak/nie? ").lower()
+
+#     if continuation != "tak":
+#       running = False
+#   else:
+#     print(f"\nza zakupu zapłacisz {kwota}")
+
+
+# kalkulator_zakupow2()
+
+#zad 8 policz ile jest samogłosek w podanych przez użytkownika życzeniach świątecznych np. dla Wesołych Świąt podaje 5
+
+# def liczsamogloski(str1):
+#   samogloski="aeiouAEIUOąęóĄĘÓyY"
+#   suma = 0
+#   for i in str1:
+#     if i in samogloski:
+#       suma +=1
+#   return suma
+
+# print(liczsamogloski("Wesołych Świąt"))
+
+# def najdluzszeslowo(str1):
+#   slowa  = str1.split(" ")
+#   maxi = len(slowa[0])
+#   poz = 0
+#   for i in range(len(slowa)):
+#     if maxi < len(slowa[i]):
+#       maxi = len(slowa[i])
+#       poz = i
+#   return slowa[poz]
+
+# print(najdluzszeslowo("to jest moje megadługi ezdanie"))
+
+# christmas_carol = '''
+# Silent night! Holy night!
+# All is calm, all is bright
+# Round yon virgin mother and child!
+# Holy infant, so tender and mild,
+# Sleep in heavenly peace!
+# Sleep in heavenly peace!
+# '''
+# liczba_slow = len(christmas_carol.split())
+# # print(liczba_slow)
 
 
 

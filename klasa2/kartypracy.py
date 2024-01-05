@@ -355,7 +355,7 @@
 #   print(tab)
 
 
-lampki(10)
+# lampki(10)
 
 
 
@@ -532,16 +532,16 @@ lampki(10)
 #wersja 2 bez limitu liczby produktów - pytaj się za każdym razem czy coś jeszcze, na końcu podaj wynik
 
 
-def zakupy():
-  max = int(input("ilosc "))
-  licznik = 0
-  kwota = 0
-  while licznik < max:
-    kwota += float(input("kwota "))
-    licznik += 1
-  else:
-    print(f"\cena zakupów {kwota}")
-print(zakupy())
+# def zakupy():
+#   max = int(input("ilosc "))
+#   licznik = 0
+#   kwota = 0
+#   while licznik < max:
+#     kwota += float(input("kwota "))
+#     licznik += 1
+#   else:
+#     print(f"\cena zakupów {kwota}")
+# print(zakupy())
 
 
 
@@ -857,6 +857,40 @@ print(zakupy())
 # while b>0:
 #   a, b = b, a%b
 #   print (a)
+
+
+
+
+
+
+
+
+liczba  = [random.uniform(0,50) for i in range (20)]
+print("Tablica liczb ", liczba)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

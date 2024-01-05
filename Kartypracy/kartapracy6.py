@@ -1,24 +1,24 @@
- # a,b,c =int(input()), int(input()), int(input()),
-# #ciąg arytmetyczny 
-# if a - b == b - c:
-#     print("ciąg jest arytmetyczny")
-# else:
-#     print("ciąg nie jest arytmetyczny")
-# #ciaggeomertyczny
-# if a / b == b / c:
-#     print("jestgeometryczny")
-# else:
-#     print("niejestgeometryczny")
-# #rosnący 
-# if a < b < c:
-#     print("jest rosnący")
-# else:
-#     print(" nie jest rosnący")
-# #malejący
-# if a > b > c:
-#     print("jestmalejący")
-# else:
-#     print("niejestmalejący")
+ a,b,c =int(input()), int(input()), int(input()),
+#ciąg arytmetyczny 
+if a - b == b - c:
+    print("ciąg jest arytmetyczny")
+else:
+    print("ciąg nie jest arytmetyczny")
+#ciaggeomertyczny
+if a / b == b / c:
+    print("jestgeometryczny")
+else:
+    print("niejestgeometryczny")
+#rosnący 
+if a < b < c:
+    print("jest rosnący")
+else:
+    print(" nie jest rosnący")
+#malejący
+if a > b > c:
+    print("jestmalejący")
+else:
+    print("niejestmalejący")
 
 #zad2
 
@@ -56,20 +56,6 @@
 
 # n = int(input())
 
-#opcja1
-
-# licznik = 0
-# suma = 0 
-# i = 10
-# while True:
-#     if i % 19 ==0:
-#         suma += i
-#         licznik+= 1
-#     if licznik == n:
-#         break
-#     i += 1
-# print(suma)
-    
 #opcja2
 
 # licznik = 0

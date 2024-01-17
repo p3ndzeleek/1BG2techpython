@@ -15,4 +15,3 @@ print(lista_owocow[0])
 print(lista_owocow[1:3])
 
 
-

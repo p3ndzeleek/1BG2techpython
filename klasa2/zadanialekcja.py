@@ -17,8 +17,18 @@
 # print(owoce, dlugosc)
 
 
-year = int(input())
-if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
-    print("TAK")
+#anagramy
+a = input()
+b = input()
+X, Y = list(a), list(b)
+X.sort()
+Y.sort()
+a ="".join(X)
+b ="".join(Y)
+print(a,b)
+if a == b:
+    print("tak")
 else:
-    print("NIE")
+    print("nie")
+
+
